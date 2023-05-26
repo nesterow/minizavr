@@ -1,9 +1,10 @@
 # <img src="assets/logo.png" alt="logo" width="42"/> MINIZAVR
 
-🦕 Tiny [Deno](https://deno.land) & [Preact](https://preact.com) starter for single page apps.
+🦕 Tiny [Preact](https://preact.com) starter for single page apps.
 
 ## Getting Started
 
+Install [deno](https://deno.land) and start:
 ```bash
 deno task dev
 ```
