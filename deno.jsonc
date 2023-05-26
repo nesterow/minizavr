@@ -2,7 +2,7 @@
   "lock": false,
   "tasks": {
     "dev": "deno run -A bin/server.js ./dist --dev",
-    "build": "deno run -A bin/esbuild.js --build"
+    "build": "deno run -A bin/build.js --build"
   },
   "compilerOptions": {
     "jsx": "react-jsx",

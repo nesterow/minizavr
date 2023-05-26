@@ -1,6 +1,6 @@
 import denoliver from "https://deno.land/x/denoliver@2.3.1/mod.ts"
-import build from './esbuild.js'
-import twcss from './twcss.js'
+import {build} from './esbuild.js'
+import {build as twcss} from './twcss.js'
 
 const {watchFs, mkdirSync, chdir, osRelease} = Deno
 

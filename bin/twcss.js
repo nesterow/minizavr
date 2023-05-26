@@ -25,7 +25,7 @@ function parse() {
   }
 }
 
-export default function build() {
+export function build() {
   //tw.snapshot()
   parse()
   Deno.writeTextFileSync(`${ROOT}/dist/main.css`, stringify(tw.target))
