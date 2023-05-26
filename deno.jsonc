@@ -1,0 +1,17 @@
+{
+  "lock": false,
+  "tasks": {
+    "dev": "deno run -A bin/server.js ./dist --dev",
+    "build": "deno run -A bin/esbuild.js --build"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "https://esm.sh/preact",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "importMap": "./import_map.json",
+  "deno.config": "./tsconfig.json"
+}
