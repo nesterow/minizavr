@@ -2,7 +2,7 @@ import denoliver from "https://deno.land/x/denoliver@2.3.1/mod.ts"
 import {build} from './esbuild.js'
 import {build as twcss} from './twcss.js'
 
-const {watchFs, mkdirSync, chdir, osRelease} = Deno
+const {remove, watchFs, mkdirSync, chdir, osRelease} = Deno
 
 async function watch()  {
   const watcher = watchFs("./src")
@@ -17,7 +17,7 @@ async function watch()  {
     twcss()
   }
 }
-
+await remove('./dist/assets', {recursive: true}).catch(() => {})
 mkdirSync('./dist', {
   recursive: true
 })

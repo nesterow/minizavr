@@ -1,8 +1,8 @@
 import {build as build_js} from './esbuild.js'
 import {build as build_css} from './twcss.js'
-const {watchFs, mkdirSync, osRelease} = Deno
+const {remove, watchFs, mkdirSync, osRelease} = Deno
 
-
+await remove('./dist/assets', {recursive: true}).catch(() => {})
 mkdirSync('./dist', {
   recursive: true
 })
